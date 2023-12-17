@@ -9,7 +9,7 @@ const ITEMS: {
     }[]
 }[] = [
     {
-        title: 'Virksomhed',
+        title: 'Frivillig organisation',
         links: [
             {
                 title: 'Unge Iværksættere',
@@ -20,6 +20,14 @@ const ITEMS: {
             }
         ]
     },
+    {
+        title: "Links",
+        links: [
+            { title: 'Podcast', href: 'https://open.spotify.com/show/154B6QakpSESlOKiFkiDyk' },
+            { title: 'Facebook', href: 'https://www.facebook.com/ungeivaerksaettere' },
+            { title: 'Instagram', href: 'https://www.instagram.com/ivaerksaettere/' },
+        ]
+    }
 ]
 export default function Footer(){
     return (
