@@ -1,12 +1,12 @@
 import Head from 'next/head'
 
 const Meta = ({ 
-  title = "Unge Iværksættere",
-  keywords = "Iværksætteri Unge Ungeiværksættere ",
-  description = "For ofte bliver unges idéer ikke til virkelighed, derfor samler vi unge iværksættere.",
-  icon = "/logo-white.png",
+  title = "Gazella Team",
+  keywords = "A software agency with passion for profitable solutions",
+  description = "A software agency with passion for profitable solutions",
+  icon = "/favicon.png",
   banner = "/seo/banner.png",
-  url = "https://ungeivaerksattere.dk"
+  url = ""
 }: { title?: string, keywords?: string, description?: string, icon?: string, banner?: string, url?: string }) => {
 
   return (

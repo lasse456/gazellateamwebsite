@@ -1,20 +1,46 @@
-import Footer from "./Footer";
+import Navbar from "./Navbar";
 import Meta from "./Meta";
-import Navbar, { PAGES } from "./Navbar";
-import Script from 'next/script';
+import localFont from "next/font/local"
 
-export default function Layout({ page, className, children }: { page: PAGES, className?: string, children: React.ReactNode}){
-    return (    
-        <div className="min-h-screen flex flex-col justify-between">
-            <div>
-                <Script src="/js/script.js" data-domain="ungeivaerksattere.dk" strategy="lazyOnload" />
-                <Meta/>
-                <Navbar page={page}/>
-                <div className={`${className}`}>
-                    {children}
-                </div>
+const GazellaTeamFont = localFont({
+  src: [
+    {
+      path: '../fonts/Plain-Regular.otf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../fonts/Plain-Bold.otf',
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: '../fonts/Plain-Thin.otf',
+      weight: '200',
+      style: 'normal',
+    },
+  ],
+})
+
+export default function Layout({
+  className,
+  children,
+}: {
+  className?: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <div className="flex flex-col justify-between min-h-screen">
+    <Meta />
+      <div>
+        <div className={GazellaTeamFont.className}>
+
+            <Navbar />
+            <div style={{paddingTop: "90px"}}>
+            {children}
             </div>
-            <Footer/>
         </div>
-    )
+      </div>
+    </div>
+  );
 }
