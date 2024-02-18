@@ -1,10 +1,11 @@
 import { useRouter } from "next/router"
 
+
 export default function DefaultHero(props:any) {
+    const route = useRouter()
+    const path = route.pathname
 
     const getSection = () => {
-        const route = useRouter()
-        const path = route.pathname
         if (path.split("/").length > 1) {
             return (
                 path.split("/").reverse()[0]
