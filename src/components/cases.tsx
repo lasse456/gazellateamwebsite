@@ -1,8 +1,10 @@
+import Link from "next/link"
+
 const casesData = [
-    {company: "COAD", caseDescription: "Udvikling af Vid&Sans – nyt videnskabeligt medie fra Århus Universitetsforlag.", caseImage: "/cases/coad/coad.svg", tag:["web", "UI/UX", "seo"]},
-    {company: "Centox Web App", caseDescription: "Planmates is a mobile app, made to make planning new events and plans with your friends easier", caseImage: "/cases/centox/centox.svg", tag:["web-app", "design", "frontend"]},
-    {company: "Planmates App", caseDescription: "Planmates is a mobile app, made to make planning new events and plans with your friends easier", caseImage: "/cases/planmates/planmates.svg", tag:["app", "iOS", "UX"]},
-    {company: "Organic Masterclass", caseDescription: "Udvikling af Vid&Sans – nyt videnskabeligt medie fra Århus Universitetsforlag.", caseImage: "/cases/organicmasterclass/organicmasterclass.svg", tag:["web", "seo", "UI"]},
+    {company: "COAD", caseDescription: "Udvikling af Vid&Sans – nyt videnskabeligt medie fra Århus Universitetsforlag.", caseImage: "/cases/coad/coad.svg", tag:["web", "UI/UX", "seo"], link: "/work/cases/coad"},
+    {company: "Centox Web App", caseDescription: "Planmates is a mobile app, made to make planning new events and plans with your friends easier", caseImage: "/cases/centox/centox.svg", tag:["web-app", "design", "frontend"], link: "/work/cases/centox"},
+    {company: "Planmates App", caseDescription: "Planmates is a mobile app, made to make planning new events and plans with your friends easier", caseImage: "/cases/planmates/planmates.svg", tag:["app", "iOS", "UX"], link: "/work/cases/planmates"},
+    {company: "Organic Masterclass", caseDescription: "Udvikling af Vid&Sans – nyt videnskabeligt medie fra Århus Universitetsforlag.", caseImage: "/cases/organicmasterclass/organicmasterclass.svg", tag:["web", "seo", "UI"], link: "/work/cases/organicmasterclass"},
 ]
 
 export default function Cases() {
@@ -17,7 +19,7 @@ export default function Cases() {
 
 const CaseCard = (props:any) => {
     return (
-        <div className="h-[600px] rounded-[14px] bg-center bg-cover flex flex-col justify-between" style={{backgroundImage: `linear-gradient(rgba(5, 29, 64, 0), rgba(5, 29, 64, 1)), url(${props.Obj.caseImage})`}}>
+        <Link href={props.Obj.link} className="h-[600px] rounded-[14px] bg-center bg-cover flex flex-col justify-between" style={{backgroundImage: `linear-gradient(rgba(5, 29, 64, 0), rgba(5, 29, 64, 1)), url(${props.Obj.caseImage})`}}>
             <p className="inline-block font-[200] text-white p-[30px]">{props.Obj.tag.map((v:any) => <span key={v}>#{v}{" "}</span>)}</p>
 
             <div className="text-white p-[30px]">
@@ -27,6 +29,6 @@ const CaseCard = (props:any) => {
                 </div>
             </div>
 
-        </div>
+        </Link>
     )
 }

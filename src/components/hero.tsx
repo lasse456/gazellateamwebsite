@@ -4,7 +4,7 @@ export default function Hero() {
             <div className="w-[94%] mx-auto text-main mb-[100px] max-w-main">
 
                     <h1 className="text-[84px] font-[400] mb-[30px] w-[60%] leading-[85px] tracking-tighter">Software development based in Copenhagen.</h1>
-
+                    <p className="text-[20px] font-[300] text-gray-600 w-[50%]">We specialise in premium, native apps for ambitious brands. Delivering best-in-class user experiences and elevating businesses.</p>
             </div>
             <div>
             <video autoPlay loop muted playsInline width="100%">
