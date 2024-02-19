@@ -8,17 +8,18 @@ export default function Navbar() {
   return (
     <>
       <nav className="fixed w-full bg-white h-[90px] flex items-center z-10">
-        <div className="w-[94%] mx-auto flex items-center justify-between">
+        <div className="w-[94%] mx-auto flex items-center max-w-main justify-between">
           <div className='flex items-center gap-[80px]'>
-            <Link href={"/"}>
-              <img className="w-[90px]" src="/logos/mainlogo.svg" alt="Logo"></img>
+            <Link className='flex items-center gap-[10px]' href={"/"}>
+              <img className="w-[60px] rounded-[14px]" src="/favicon.png" alt="Logo"></img>
+              <p className='text-[24px] text-main'>Gazella Team</p>
             </Link>
             
             <div className='flex items-center gap-[14px] text-main font-[400]'>
               <Link className='px-[10px] py-[4px] rounded-full hover:bg-second transition-all' href={"/services"}>Services</Link>
               <Link className='px-[10px] py-[4px] rounded-full hover:bg-second transition-all' href={"/work"}>Work</Link>
-              <Link className='px-[10px] py-[4px] rounded-full hover:bg-second transition-all' href={"/services"}>Company</Link>
-              <Link className='px-[10px] py-[4px] rounded-full hover:bg-second transition-all' href={"/services"}>Contact</Link>
+              <Link className='px-[10px] py-[4px] rounded-full hover:bg-second transition-all' href={"/company/team"}>Company</Link>
+              <Link className='px-[10px] py-[4px] rounded-full hover:bg-second transition-all' href={"/contact"}>Contact</Link>
             </div>
           </div>
 

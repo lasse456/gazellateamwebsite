@@ -21,9 +21,14 @@ export default function DefaultHero(props:any) {
     return (
         <section className="py-[100px] pb-[30px]">
             <div>
-                <div className="w-[94%] mx-auto text-main mb-[100px]">
+                <div className="w-[94%] mx-auto text-main mb-[50px] max-w-main">
                     <p className="text-[20px] font-[200] mb-[20px]">/{getSection()}</p>
                     <h1 className="text-[84px] mb-[30px] w-[40%] leading-[85px] tracking-tighter">{props.heading}.</h1>
+                </div>
+                <div className="w-[80%] mx-auto max-w-main flex items-center justify-end mb-[100px]">
+                    <div className="w-[50%]">
+                        <p className="text-[20px] font-[300] text-gray-600">{props.description}</p>
+                    </div>
                 </div>
             </div>
         </section>
