@@ -23,7 +23,7 @@ export default function DefaultHero(props:any) {
             <div>
                 <div className="w-[94%] mx-auto text-main mb-[50px] max-w-main">
                     <p className="text-[20px] font-[200] mb-[20px]">/{getSection()}</p>
-                    <h1 className="text-[84px] mb-[30px] w-[40%] leading-[85px] tracking-tighter">{props.heading}.</h1>
+                    <h1 className="text-[84px] mb-[30px] w-[40%] leading-[85px] tracking-tighter">{props.heading}{" "}<span className="bg-gradient-to-l from-main via-blue-900 via-blue-800 via-blue-900 to-main text-transparent bg-clip-text">{props.gradientHeading}.</span></h1>
                 </div>
                 <div className="w-[80%] mx-auto max-w-main flex items-center justify-end mb-[100px]">
                     <div className="w-[50%]">
