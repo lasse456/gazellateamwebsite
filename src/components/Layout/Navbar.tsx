@@ -23,6 +23,7 @@ export default function Navbar() {
           </div>
 
           <div className='flex items-center gap-[20px] text-main'>
+          <Link className='px-[10px] py-[4px] rounded-full hover:bg-second transition-all' href={"/products"}>Our products</Link>
             <div className='flex items-center gap-[5px] text-[15px] font-[400]'>
               <Link href={"/dk"}>DK</Link>
               <p>|</p>
