@@ -7,7 +7,7 @@ export default function Planmates() {
   return (
     <Layout>
         <CaseHero heading="The dream site for a marketing consultant" caseImage="/hero.webp"/>
-        <CaseProps />
+        <CaseProps customer="COAD" service="Web development" developers={["Lasse Osmann", "Simon Maribo"]} />
         <MoreCases />
     </Layout>
   );
