@@ -28,7 +28,7 @@ export default function Navbar() {
               <p>|</p>
               <Link href={"/"}>EN</Link>
             </div>
-            <Link className='bg-main text-white px-[20px] font-[400] text-[15px] py-[10px] rounded-full' href={"/price"}>Pricecalculator</Link>
+            <Link className='bg-transparent border-[2px] border-main text-main px-[20px] font-[400] text-[15px] py-[10px] rounded-full hover:bg-main hover:text-white transition-all' href={"/price"}>Pricecalculator</Link>
           </div>
       </div>
       </nav>

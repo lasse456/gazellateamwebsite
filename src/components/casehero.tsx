@@ -24,7 +24,7 @@ export default function CaseHero(props:any) {
                 <h1 className="text-[84px] font-[400] mb-[30px] w-[60%] leading-[85px] tracking-tighter">{props.heading}.</h1>
             </div>
             <div className="w-[100%] mx-auto">
-                <img className="w-full h-[600px] " src={props.caseImage}></img>
+                <img className="w-[94%] mx-auto rounded-[14px] h-[600px] " src={props.caseImage}></img>
             </div>
         </section>
     )

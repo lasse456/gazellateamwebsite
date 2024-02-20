@@ -35,8 +35,8 @@ const memberData = [
 
 export default function Members() {
   return (
-    <section className="py-[100px] pt-[0px]">
-      <div className="w-[94%] mx-auto max-w-main lg:w-[90%]">
+    <section className="py-[100px]">
+      <div className="w-[94%] mx-auto max-w-main ">
         <div className="grid grid-cols-4 gap-x-[20px] gap-y-[50px] members:grid-cols-2 membersSm:grid-cols-2 membersSmallest:grid-cols-1">
           {memberData.map((v) => (
             <MemberCard key={v} Obj={v} />
@@ -60,7 +60,7 @@ const MemberCard = (props: any) => {
         ></img>
 
         <h1 className="text-[20px] font-[400] text-main">{props.Obj.name}</h1>
-        <p className="text-gray-600 font-[300]">{props.Obj.position}</p>
+        <p className="text-gray-600 font-[300]">/ {props.Obj.position}</p>
       </div>
     </Link>
   );

@@ -4,7 +4,7 @@ import { useState } from "react";
 export default function Values() {
     return (
         <section className="py-[100px]">
-        <div className="w-[94%] mx-auto max-w-[42%]">
+        <div className="w-[94%] mx-auto max-w-[630px]">
           <h1 className="text-[40px] text-main mb-[40px] leading-[50px]">Our best workflow: With you from idea to finished product</h1>
           <p className="text-gray-600 text-[20px] font-[300]">
           As each day pass, the world becomes more digital. Tasks become automated, information gets stored on the internet and applications handle problems we once had to take care of ourselves.
