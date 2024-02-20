@@ -2,6 +2,7 @@ import Navbar from "./Navbar";
 import Meta from "./Meta";
 import localFont from "next/font/local"
 import Footer from "./Footer";
+import Chat from "./Chat";
 
 const GazellaTeamFont = localFont({
   src: [
@@ -37,6 +38,7 @@ export default function Layout({
         <div className={GazellaTeamFont.className}>
 
             <Navbar />
+            <Chat />
             <div style={{paddingTop: "90px"}}>
             {children}
             </div>
