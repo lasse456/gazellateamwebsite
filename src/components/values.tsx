@@ -1,38 +1,21 @@
 import Link from "next/link";
 import { useState } from "react";
 
-
-const valueData = [
-    {heading: "Transparency", description: "We regularly dive deep into a wide range of industries and challenges, including."},
-    {heading: "Transparency", description: "We regularly dive deep into a wide range of industries and challenges, including."},
-    {heading: "Transparency", description: "We regularly dive deep into a wide range of industries and challenges, including."},
-    {heading: "Transparency", description: "We regularly dive deep into a wide range of industries and challenges, including."},
-    {heading: "Transparency", description: "We regularly dive deep into a wide range of industries and challenges, including."},
-    {heading: "Transparency", description: "We regularly dive deep into a wide range of industries and challenges, including."},
-];
-
 export default function Values() {
     return (
-        <section className="py-[100px] pt-[100px]">
-            <div className="w-[90%] mx-auto mb-[100px] max-w-main">
-                <div className="mb-[20px]">
-                    <h1 className="text-[40px] font-[400] text-main">How we operate with partners</h1>
-                    <p className="text-gray-600 text-[20px] font-[300]">We take pride in all of our craft</p>
-                </div>
-            </div>
-            <div className="w-[90%] mx-auto grid grid-cols-3 gap-[70px] max-w-main">
-                {valueData.map(v => <ValueCard key={v} Obj={v} />)}
-            </div>
-        </section>
+        <section className="py-[100px]">
+        <div className="w-[94%] mx-auto max-w-[42%]">
+          <h1 className="text-[40px] text-main mb-[40px] leading-[50px]">Our best workflow: With you from idea to finished product</h1>
+          <p className="text-gray-600 text-[20px] font-[300]">
+          As each day pass, the world becomes more digital. Tasks become automated, information gets stored on the internet and applications handle problems we once had to take care of ourselves.
+<br></br><br></br>
+Gazella Team helps your company, project or organization excel in a digital world, by offering software-solutions custom-made to benefit the opportunites and challenges you&apos;re facing.
+<br></br><br></br>
+With our +10 years combined experience, we offer you a dedicated partner that understands your needs, and develops a corresponding solution that matches the requirements of your project.
+          </p>
+        </div>
+      </section>
     )
 }
 
 
-const ValueCard = (props: any) => {
-  return (
-    <div>
-        <h1 className="font-[400] text-[28px] text-main mb-[20px]">{props.Obj.heading}</h1>
-        <p className="font-[300] text-[18px] text-gray-600">{props.Obj.description}</p>
-    </div>
-  );
-};

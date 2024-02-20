@@ -9,8 +9,8 @@ export default function Home() {
     <Layout>
       <Hero />
       <section className="py-[100px]">
-        <div className="w-[94%] mx-auto max-w-[48%]">
-          <h1 className="text-[40px] text-main mb-[40px] leading-[50px]">We help you achieve digital success through innovative software</h1>
+        <div className="w-[94%] mx-auto max-w-[42%]">
+          <h1 className="text-[40px] text-main mb-[40px] leading-[50px]">We help you achieve digital success through software</h1>
           <p className="text-gray-600 text-[20px] font-[300]">
           As each day pass, the world becomes more digital. Tasks become automated, information gets stored on the internet and applications handle problems we once had to take care of ourselves.
 <br></br><br></br>

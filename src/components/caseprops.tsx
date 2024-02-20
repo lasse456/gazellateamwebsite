@@ -4,18 +4,17 @@ export default function CaseProps(props:any) {
             <div className="w-[94%] mx-auto max-w-[1100px] grid grid-cols-2">
                 <div className="flex flex-col gap-[30px]">
                     <div>
-                        <h1 className="font-[400] text-[24px] text-main">Customer</h1>
-                        <p className="font-[300] text-[20px] text-gray-600">Planmates</p>
+                        <h1 className="font-[400] text-[24px] text-main mb-[6px]">Customer</h1>
+                        <p className="font-[300] text-[20px] text-gray-600">{props.customer}</p>
                     </div>
                     <div>
-                        <h1 className="font-[400] text-[24px] text-main">Customer</h1>
-                        <p className="font-[300] text-[20px] text-gray-600">Planmates</p>
+                        <h1 className="font-[400] text-[24px] text-main mb-[6px]">Service</h1>
+                        <p className="font-[300] text-[20px] text-gray-600">{props.service}</p>
                     </div>
                     <div>
-                        <h1 className="font-[400] text-[24px] text-main">Customer</h1>
-                        <p className="font-[300] text-[20px] text-gray-600">Planmates</p>
+                        <h1 className="font-[400] text-[24px] text-main mb-[6px]">Developers</h1>
+                        {props.developers.map((v:any) => <p key={v} className="font-[300] text-[20px] text-gray-600">{v}</p>)}
                     </div>
-
                 </div>
 
                 <div>

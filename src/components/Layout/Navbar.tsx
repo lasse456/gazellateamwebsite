@@ -18,7 +18,6 @@ export default function Navbar() {
               <Link className='px-[10px] py-[4px] rounded-full hover:bg-second transition-all' href={"/services"}>Services</Link>
               <Link className='px-[10px] py-[4px] rounded-full hover:bg-second transition-all' href={"/work"}>Work</Link>
               <Link className='px-[10px] py-[4px] rounded-full hover:bg-second transition-all' href={"/company/team"}>Company</Link>
-              <Link className='px-[10px] py-[4px] rounded-full hover:bg-second transition-all' href={"/company/team"}>Products</Link>
               <Link className='px-[10px] py-[4px] rounded-full hover:bg-second transition-all' href={"/contact"}>Contact</Link>
             </div>
           </div>

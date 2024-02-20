@@ -1,6 +1,7 @@
 import Navbar from "./Navbar";
 import Meta from "./Meta";
 import localFont from "next/font/local"
+import Footer from "./Footer";
 
 const GazellaTeamFont = localFont({
   src: [
@@ -39,6 +40,7 @@ export default function Layout({
             <div style={{paddingTop: "90px"}}>
             {children}
             </div>
+            <Footer />
         </div>
       </div>
     </div>

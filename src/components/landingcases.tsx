@@ -9,7 +9,7 @@ const casesData = [
 
 export default function LandingCases() {
     return (
-        <section className="py-[100px] pt-[100px]">
+        <section className="py-[100px]">
             <div className="w-[94%] mx-auto mb-[30px] max-w-main">
                 <div className="mb-[20px]">
                     <h1 className="text-[40px] font-[400] text-main">A selection of our work</h1>
